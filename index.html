@@ -19,6 +19,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <header>
@@ -57,7 +61,43 @@
         loop
       ></video>
     </div>
-    <div id="container"></div>
+    <div id="container">
+      <section class="con1">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="img/0982e24725bdb.jpg" /></div>
+            <div class="swiper-slide"><img src="img/1e84e08fdad3e.jpg" /></div>
+            <div class="swiper-slide"><img src="img/2d1bb34851b65.jpg" /></div>
+            <div class="swiper-slide"><img src="img/354d2213697cd.jpg" /></div>
+            <div class="swiper-slide"><img src="img/4ff6ae0b7b95b.jpg" /></div>
+            <div class="swiper-slide"><img src="img/5bc76506a335f.jpg" /></div>
+            <div class="swiper-slide"><img src="img/6c246d26ccf69.jpg" /></div>
+            <div class="swiper-slide"><img src="img/8c743146394be.jpg" /></div>
+            <div class="swiper-slide"><img src="img/cc37301855455.jpg" /></div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+    </div>
     <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3, // 한 번에 보여질 슬라이드 수
+        spaceBetween: 30, // 슬라이드 간격
+        loop: true, // 무한 반복 활성화
+        autoplay: {
+          delay: 1000, // 3초마다 슬라이드 전환
+          disableOnInteraction: false, // 사용자 상호작용 후에도 자동 재생 유지
+        },
+        pagination: {
+          el: ".swiper-pagination", // 외부에 위치한 pagination 요소 선택
+          clickable: true, // 페이지 번호 클릭 가능
+        },
+      });
+    </script>
   </body>
 </html>
