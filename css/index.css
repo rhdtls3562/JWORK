@@ -1,0 +1,94 @@
+/*header*/
+header {
+  position: absolute; /* 헤더를 겹치도록 설정 */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10; /* 비주얼 위에 표시 */
+}
+
+.header_1 {
+  padding: 0.1vw 3vw;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.5); /* 투명 배경색 */
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* 콘텐츠 세로 정렬 */
+}
+
+.header_2 {
+  display: flex;
+  gap: 5vw;
+  align-items: center;
+}
+
+.header_2 li {
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 1vw;
+}
+
+.header_2 li:hover a {
+  color: tomato;
+}
+
+.header_1 h1 {
+  font-size: 3vw;
+  font-family: "Honk", serif;
+}
+
+header i {
+  font-size: 2vw;
+}
+
+.header_2 li a {
+  transition: 0.3s;
+  color: #fff;
+}
+
+header img {
+  width: 5vw;
+}
+
+/*visual*/
+#visual {
+  width: 100%;
+  overflow: hidden;
+  margin-top: 0;
+  position: relative;
+  z-index: 1; /* 헤더 아래에 표시 */
+}
+
+#visual h2 {
+  font-family: "Roboto", serif;
+  font-size: 5vw;
+  left: 50%;
+  top: 43%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: #fff;
+  position: absolute;
+}
+
+#visual h2 span {
+  color: tomato;
+}
+
+#visual p {
+  width: 45%;
+  font-size: 1.3vw;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+  color: #fff;
+  position: absolute;
+  text-align: justify;
+}
+
+.visual_back {
+  display: block;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
